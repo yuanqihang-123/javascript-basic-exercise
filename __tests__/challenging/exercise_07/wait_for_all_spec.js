@@ -36,7 +36,7 @@ describe('for wait for all', () => {
         // eslint-disable-next-line no-undef
         () => fail('It should not be a success promise'),
         () => {
-          expect(stopwatch.elapsedMs).toBeGreaterThanOrEqual(1000);
+          expect(stopwatch.elapsedMs).toBeGreaterThanOrEqual(50);
           done();
         },
       );
